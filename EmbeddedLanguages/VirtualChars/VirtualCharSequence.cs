@@ -25,11 +25,11 @@ namespace Microsoft.CodeAnalysis.EmbeddedLanguages.VirtualChars;
 /// This allows for embedded language processing that can refer back to the user's original code
 /// instead of the escaped value we're processing.
 /// </summary>
-internal partial struct VirtualCharSequence
+public partial struct VirtualCharSequence
 {
     public static readonly VirtualCharSequence Empty = Create(ImmutableSegmentedList<VirtualChar>.Empty);
 
-    public static VirtualCharSequence Create(ImmutableSegmentedList<VirtualChar> virtualChars)
+    internal static VirtualCharSequence Create(ImmutableSegmentedList<VirtualChar> virtualChars)
         => new(new ImmutableSegmentedListChunk(virtualChars));
 
     public static VirtualCharSequence Create(int firstVirtualCharPosition, string underlyingData)

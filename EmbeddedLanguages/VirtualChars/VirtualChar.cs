@@ -24,7 +24,7 @@ namespace Microsoft.CodeAnalysis.EmbeddedLanguages.VirtualChars;
 /// and the same as "\\\u007a".  However, as these all have wildly different presentations for the user, there needs
 /// to be a way to map back the characters it sees ( '\' and 'z' ) back to the  ranges of characters the user wrote.
 /// </remarks>
-internal readonly record struct VirtualChar : IComparable<VirtualChar>, IComparable<char>
+public readonly record struct VirtualChar : IComparable<VirtualChar>, IComparable<char>
 {
     /// <summary>
     /// The value of this <see cref="VirtualChar"/> as a <see cref="Rune"/> if such a representation is possible.

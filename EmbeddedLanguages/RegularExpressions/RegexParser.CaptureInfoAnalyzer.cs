@@ -19,7 +19,7 @@ using static RegexHelpers;
 
 using RegexToken = EmbeddedSyntaxToken<RegexKind>;
 
-internal partial struct RegexParser
+public partial struct RegexParser
 {
     /// <summary>
     /// Analyzes the first parsed tree to determine the set of capture numbers and names.  These are

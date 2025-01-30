@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Microsoft.CodeAnalysis.EmbeddedLanguages.VirtualChars;
 
-internal partial struct VirtualCharSequence
+public partial struct VirtualCharSequence
 {
     public struct Enumerator(VirtualCharSequence virtualCharSequence) : IEnumerator<VirtualChar>
     {

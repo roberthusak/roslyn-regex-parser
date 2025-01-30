@@ -11,7 +11,7 @@ using Microsoft.CodeAnalysis.Text;
 
 namespace Microsoft.CodeAnalysis.EmbeddedLanguages.RegularExpressions;
 
-internal sealed class RegexTree(
+public sealed class RegexTree(
     VirtualCharSequence text,
     RegexCompilationUnit root,
     ImmutableArray<EmbeddedDiagnostic> diagnostics,

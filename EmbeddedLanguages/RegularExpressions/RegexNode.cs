@@ -8,7 +8,7 @@ using Microsoft.CodeAnalysis.EmbeddedLanguages.Common;
 
 namespace Microsoft.CodeAnalysis.EmbeddedLanguages.RegularExpressions;
 
-internal abstract class RegexNode : EmbeddedSyntaxNode<RegexKind, RegexNode>
+public abstract class RegexNode : EmbeddedSyntaxNode<RegexKind, RegexNode>
 {
     protected RegexNode(RegexKind kind) : base(kind)
     {

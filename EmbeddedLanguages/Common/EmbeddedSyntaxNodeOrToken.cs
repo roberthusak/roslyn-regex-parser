@@ -8,7 +8,7 @@ using Microsoft.CodeAnalysis.Text;
 
 namespace Microsoft.CodeAnalysis.EmbeddedLanguages.Common;
 
-internal readonly struct EmbeddedSyntaxNodeOrToken<TSyntaxKind, TSyntaxNode>
+public readonly struct EmbeddedSyntaxNodeOrToken<TSyntaxKind, TSyntaxNode>
     where TSyntaxKind : struct
     where TSyntaxNode : EmbeddedSyntaxNode<TSyntaxKind, TSyntaxNode>
 {

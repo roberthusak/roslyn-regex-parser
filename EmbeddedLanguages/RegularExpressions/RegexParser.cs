@@ -77,7 +77,7 @@ using RegexToken = EmbeddedSyntaxToken<RegexKind>;
 /// during design time that they would not get at runtime.  It's far worse to have that than to
 /// not report an error, even though one might happen later.
 /// </remarks>
-internal partial struct RegexParser
+public partial struct RegexParser
 {
     private readonly ImmutableDictionary<string, TextSpan> _captureNamesToSpan;
     private readonly ImmutableDictionary<int, TextSpan> _captureNumbersToSpan;

@@ -34,7 +34,7 @@ namespace Microsoft.CodeAnalysis.EmbeddedLanguages.Common;
 ///    has multiple nodes.  For example there are distinct nodes to represent the very similar
 ///    {a}   {a,}    {a,b}    constructs.
 /// </summary>
-internal abstract class EmbeddedSyntaxNode<TSyntaxKind, TSyntaxNode>
+public abstract class EmbeddedSyntaxNode<TSyntaxKind, TSyntaxNode>
     where TSyntaxKind : struct
     where TSyntaxNode : EmbeddedSyntaxNode<TSyntaxKind, TSyntaxNode>
 {
@@ -51,7 +51,7 @@ internal abstract class EmbeddedSyntaxNode<TSyntaxKind, TSyntaxNode>
     internal abstract EmbeddedSyntaxNodeOrToken<TSyntaxKind, TSyntaxNode> ChildAt(int index);
 
     public EmbeddedSyntaxNodeOrToken<TSyntaxKind, TSyntaxNode> this[int index] => ChildAt(index);
-    public EmbeddedSyntaxNodeOrToken<TSyntaxKind, TSyntaxNode> this[Index index] => this[index.GetOffset(this.ChildCount)];
+    internal EmbeddedSyntaxNodeOrToken<TSyntaxKind, TSyntaxNode> this[Index index] => this[index.GetOffset(this.ChildCount)];
 
     public TextSpan GetSpan()
     {

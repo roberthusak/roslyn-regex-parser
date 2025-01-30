@@ -12,7 +12,7 @@ namespace Microsoft.CodeAnalysis.EmbeddedLanguages.Common;
 /// <summary>
 /// Trivia on an <see cref="EmbeddedSyntaxToken{TSyntaxKind}"/>.
 /// </summary>
-internal readonly struct EmbeddedSyntaxTrivia<TSyntaxKind> where TSyntaxKind : struct
+public readonly struct EmbeddedSyntaxTrivia<TSyntaxKind> where TSyntaxKind : struct
 {
     public readonly TSyntaxKind Kind;
     public readonly VirtualCharSequence VirtualChars;

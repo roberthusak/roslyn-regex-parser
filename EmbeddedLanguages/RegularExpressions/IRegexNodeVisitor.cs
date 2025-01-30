@@ -6,7 +6,7 @@
 
 namespace Microsoft.CodeAnalysis.EmbeddedLanguages.RegularExpressions;
 
-internal interface IRegexNodeVisitor
+public interface IRegexNodeVisitor
 {
     void Visit(RegexCompilationUnit node);
     void Visit(RegexSequenceNode node);

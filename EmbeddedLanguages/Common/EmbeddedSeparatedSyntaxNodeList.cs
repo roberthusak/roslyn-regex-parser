@@ -9,7 +9,7 @@ using Roslyn.Utilities;
 
 namespace Microsoft.CodeAnalysis.EmbeddedLanguages.Common;
 
-internal readonly struct EmbeddedSeparatedSyntaxNodeList<TSyntaxKind, TSyntaxNode, TDerivedNode>
+public readonly struct EmbeddedSeparatedSyntaxNodeList<TSyntaxKind, TSyntaxNode, TDerivedNode>
     where TSyntaxKind : struct
     where TSyntaxNode : EmbeddedSyntaxNode<TSyntaxKind, TSyntaxNode>
     where TDerivedNode : TSyntaxNode
