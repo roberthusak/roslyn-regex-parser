@@ -6,6 +6,11 @@
     <RootNamespace>Microsoft.CodeAnalysis</RootNamespace>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Version>4.12.0</Version>
+    <Authors>Microsoft;Robert Husák</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Title>Regex syntax tree and parser extracted from Roslyn</Title>
+    <RepositoryUrl>https://github.com/roberthusak/roslyn-regex-parser</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
