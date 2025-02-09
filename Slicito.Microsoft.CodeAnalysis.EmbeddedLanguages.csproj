@@ -10,6 +10,9 @@
     <Authors>Microsoft;Robert Husák</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Title>Regex syntax tree and parser extracted from Roslyn</Title>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Roslyn;CodeAnalysis;Parser;Lexer;Syntax;Regex</PackageTags>
     <RepositoryUrl>https://github.com/roberthusak/roslyn-regex-parser</RepositoryUrl>
   </PropertyGroup>
 
@@ -45,6 +48,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>FeaturesResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
